@@ -17,8 +17,8 @@ import functools
 import logging
 from binascii import crc32
 
-from kscore.vendored.requests import ConnectionError, Timeout
-from kscore.vendored.requests.packages.urllib3.exceptions import ClosedPoolError
+from requests import ConnectionError, Timeout
+from urllib3.exceptions import ClosedPoolError
 
 from kscore.exceptions import ChecksumError, EndpointConnectionError
 

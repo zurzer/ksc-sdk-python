@@ -14,7 +14,7 @@
 # language governing permissions and limitations under the License.
 
 from __future__ import unicode_literals
-from kscore.vendored.requests.exceptions import ConnectionError
+from requests.exceptions import ConnectionError
 
 import sys
 if sys.version_info[0] < 3 :

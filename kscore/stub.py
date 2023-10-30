@@ -15,7 +15,7 @@ from collections import deque
 from kscore.validate import validate_parameters
 from kscore.exceptions import ParamValidationError, \
     StubResponseError, StubAssertionError
-from kscore.vendored.requests.models import Response
+from requests.models import Response
 
 
 class Stubber(object):

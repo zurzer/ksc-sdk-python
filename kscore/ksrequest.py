@@ -22,16 +22,12 @@ from kscore.compat import six
 from kscore.compat import HTTPHeaders, HTTPResponse, urlunsplit, urlsplit
 from kscore.exceptions import UnseekableStreamError
 from kscore.utils import percent_encode_sequence
-from kscore.vendored.requests import models
-from kscore.vendored.requests.sessions import REDIRECT_STATI
-from kscore.vendored.requests.packages.urllib3.connection import \
-    VerifiedHTTPSConnection
-from kscore.vendored.requests.packages.urllib3.connection import \
-    HTTPConnection
-from kscore.vendored.requests.packages.urllib3.connectionpool import \
-    HTTPConnectionPool
-from kscore.vendored.requests.packages.urllib3.connectionpool import \
-    HTTPSConnectionPool
+from requests import models
+from requests.sessions import REDIRECT_STATI
+from urllib3.connection import VerifiedHTTPSConnection
+from urllib3.connection import HTTPConnection
+from urllib3.connectionpool import HTTPConnectionPool
+from urllib3.connectionpool import HTTPSConnectionPool
 
 
 logger = logging.getLogger(__name__)

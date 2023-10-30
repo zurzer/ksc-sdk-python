@@ -20,9 +20,9 @@ import hashlib
 import logging
 import yaml
 
-from kscore.vendored import six
+import six
 from kscore.exceptions import MD5UnavailableError
-from kscore.vendored.requests.packages.urllib3 import exceptions
+from urllib3 import exceptions
 
 logger = logging.getLogger(__name__)
 

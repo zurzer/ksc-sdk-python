@@ -24,7 +24,7 @@ from dateutil.tz import tzlocal, tzutc
 from kscore.exceptions import InvalidExpressionError, ConfigNotFound
 from kscore.exceptions import InvalidDNSNameError
 from kscore.compat import json, quote, zip_longest, urlsplit, urlunsplit
-from kscore.vendored import requests
+import requests
 from kscore.compat import OrderedDict
 
 logger = logging.getLogger(__name__)

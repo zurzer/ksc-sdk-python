@@ -17,10 +17,10 @@ import logging
 import time
 import threading
 
-from kscore.vendored.requests.sessions import Session
-from kscore.vendored.requests.utils import get_environ_proxies
-from kscore.vendored.requests.exceptions import ConnectionError
-from kscore.vendored import six
+from requests.sessions import Session
+from requests.utils import get_environ_proxies
+from requests.exceptions import ConnectionError
+import six
 
 from kscore.ksrequest import create_request_object
 from kscore.exceptions import UnknownEndpointError
@@ -38,7 +38,7 @@ DEFAULT_TIMEOUT = 60
 filter_ssl_warnings()
 
 try:
-    from kscore.vendored.requests.packages.urllib3.contrib import pyopenssl
+    from requests.packages.urllib3.contrib import pyopenssl
     pyopenssl.extract_from_urllib3()
 except ImportError:
     pass
@@ -50,7 +50,7 @@ def convert_to_response_dict(http_response, operation_model):
     This converts the requests library's HTTP response object to
     a dictionary.
 
-    :type http_response: kscore.vendored.requests.model.Response
+    :type http_response: requests.model.Response
     :param http_response: The HTTP response from an KSYUN service request.
 
     :rtype: dict
