@@ -440,5 +440,5 @@ class KSPreparedRequest(models.PreparedRequest):
                 if 'Transfer-Encoding' in self.headers:
                     self.headers.pop('Transfer-Encoding')
 
-HTTPSConnectionPool.ConnectionCls = KSHTTPSConnection
-HTTPConnectionPool.ConnectionCls = KSHTTPConnection
+# HTTPSConnectionPool.ConnectionCls = KSHTTPSConnection
+# HTTPConnectionPool.ConnectionCls = KSHTTPConnection
